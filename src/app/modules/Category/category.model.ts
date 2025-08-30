@@ -9,6 +9,10 @@ const categorySchema = new Schema<TCategory>(
       unique: true,
       trim: true,
     },
+    imageUrl: {
+      type: String,
+      required: true,
+    },
   },
   { timestamps: true }
 );
